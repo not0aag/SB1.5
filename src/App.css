@@ -1,31 +1,30 @@
-/* General App Styling */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #D1A469; /* Light brown background */
+  background-color: #D1A469; 
   color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* App Container */
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Navbar Styling */
+
 nav {
-  background-color: #444; /* Darker navbar for contrast */
+  background-color: #444; 
   padding: 1rem;
   position: fixed;  /* Fix the navbar at the top */
   top: 0;
   width: 100%;
-  z-index: 1000;  /* Ensure it stays above other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  z-index: 1000;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 nav ul {
@@ -46,18 +45,18 @@ nav ul li button {
   border: none;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1.1rem; /* Slightly larger font */
+  font-size: 1.1rem; 
   transition: color 0.3s ease;
 }
 
 nav ul li button:hover {
-  color: #FFD700; /* Gold color on hover */
+  color: #FFD700; 
 }
 
 /* Content Area */
 .content {
   flex: 1;
-  padding: 80px 20px 20px; /* Adjust top padding to match the navbar height */
+  padding: 80px 20px 20px; 
   text-align: center;
 }
 
@@ -75,35 +74,34 @@ ul li {
   border-radius: 8px;
   cursor: pointer;
   max-width: 400px;
-  transition: background-color 0.3s ease, transform 0.2s; /* Added transform effect */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 ul li:hover {
-  background-color: #cb7e19; /* Slightly darker on hover */
-  transform: translateY(-2px); /* Lift effect */
+  background-color: #cb7e19; 
+  transform: translateY(-2px); 
 }
 
 h2 {
   margin-bottom: 10px;
 }
 
-/* Button Styling - Bright Blue */
-/* Button Styling - Professional Color */
+
 button {
-  background-color: #A78354; /* Updated to professional color */
+  background-color: #A78354; 
   color: white;
   border: none;
-  padding: 12px 20px; /* Increased padding for better click area */
+  padding: 12px 20px; 
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s; /* Added transform effect */
+  transition: background-color 0.3s ease, transform 0.2s; 
 }
 
 button:hover {
-  background-color: #8B6B43; /* Darker shade for hover effect */
-  transform: translateY(-2px); /* Lift effect */
+  background-color: #8B6B43; 
+  transform: translateY(-2px); 
 }
 
 button:focus {
@@ -115,75 +113,75 @@ div {
   margin-top: 20px;
 }
 
-/* Score Styling */
+
 .score {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 20px;
 }
 
-/* Footer Styling */
+
 .footer {
-  background-color: #444; /* Dark footer to match navbar */
+  background-color: #444; 
   color: white;
   padding: 15px 0;
   text-align: center;
   width: 100%;
   margin-top: auto;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 .footer span {
   font-size: 0.9rem;
 }
 
-/* Cover Page Heading */
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333; /* Dark text for heading */
+  color: #333;
 }
 
 h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #555; /* Slightly lighter color for subheadings */
+  color: #555; 
 }
 
 .team-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align items */
-  background-color: #8B5B29; /* Light background color */
-  padding: 20px; /* Padding around the container */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  max-width: 600px; /* Set a maximum width */
-  margin: 20px auto; /* Center the container */
+  align-items: center; 
+  background-color: #8B5B29; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 600px; 
+  margin: 20px auto; 
 }
 
 .team-title {
-  font-size: 2rem; /* Larger font size for title */
-  color: #F5F5DC; /* Darker color for better contrast */
-  margin-bottom: 20px; /* Spacing below the title */
+  font-size: 2rem; 
+  color: #F5F5DC; 
+  margin-bottom: 20px; 
 }
 
 .team-member {
-  background-color: #8B6B43; /* White background for each member */
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 15px; /* Padding for member blocks */
-  margin: 10px 0; /* Vertical spacing between members */
-  width: 100%; /* Full width for each member */
-  transition: transform 0.2s; /* Animation on hover */
+  background-color: #8B6B43; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 15px; 
+  margin: 10px 0; 
+  width: 100%;
+  transition: transform 0.2s; 
 }
 
 .team-member:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .team-member h3 {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   color: #f0f0f0; 
 }
