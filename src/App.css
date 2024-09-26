@@ -3,13 +3,14 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f5;
+  background-color: #D1A469; /* Light brown background */
   color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* App Container */
 .App {
   display: flex;
   flex-direction: column;
@@ -18,12 +19,13 @@ body {
 
 /* Navbar Styling */
 nav {
-  background-color: #333;
+  background-color: #444; /* Darker navbar for contrast */
   padding: 1rem;
   position: fixed;  /* Fix the navbar at the top */
   top: 0;
   width: 100%;
   z-index: 1000;  /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 nav ul {
@@ -39,15 +41,17 @@ nav ul li {
 }
 
 nav ul li button {
-  color: white;
+  color: #fff;
   background-color: transparent;
   border: none;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1.1rem; /* Slightly larger font */
+  transition: color 0.3s ease;
 }
 
 nav ul li button:hover {
-  text-decoration: underline;
+  color: #FFD700; /* Gold color on hover */
 }
 
 /* Content Area */
@@ -64,17 +68,20 @@ ul {
 }
 
 ul li {
-  background-color: #e4e4e4;
+  background-color: #8B5B29; 
+  color: #f0f0f0;
   margin: 10px auto;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 8px;
   cursor: pointer;
   max-width: 400px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s; /* Added transform effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 ul li:hover {
-  background-color: #ccc;
+  background-color: #cb7e19; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Lift effect */
 }
 
 h2 {
@@ -82,24 +89,27 @@ h2 {
 }
 
 /* Button Styling - Bright Blue */
+/* Button Styling - Professional Color */
 button {
-  background-color: #007bff;  /* Bright blue color */
+  background-color: #A78354; /* Updated to professional color */
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 20px; /* Increased padding for better click area */
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s; /* Added transform effect */
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker shade of blue on hover */
+  background-color: #8B6B43; /* Darker shade for hover effect */
+  transform: translateY(-2px); /* Lift effect */
 }
 
 button:focus {
   outline: none;
 }
+
 
 div {
   margin-top: 20px;
@@ -114,12 +124,13 @@ div {
 
 /* Footer Styling */
 .footer {
-  background-color: #333;
+  background-color: #444; /* Dark footer to match navbar */
   color: white;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
   width: 100%;
   margin-top: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 .footer span {
@@ -130,9 +141,49 @@ div {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #333; /* Dark text for heading */
 }
 
 h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
+  color: #555; /* Slightly lighter color for subheadings */
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  background-color: #8B5B29; /* Light background color */
+  padding: 20px; /* Padding around the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Set a maximum width */
+  margin: 20px auto; /* Center the container */
+}
+
+.team-title {
+  font-size: 2rem; /* Larger font size for title */
+  color: #F5F5DC; /* Darker color for better contrast */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.team-member {
+  background-color: #8B6B43; /* White background for each member */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding for member blocks */
+  margin: 10px 0; /* Vertical spacing between members */
+  width: 100%; /* Full width for each member */
+  transition: transform 0.2s; /* Animation on hover */
+}
+
+.team-member:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.team-member h3 {
+  margin: 0; /* Remove default margin */
+  color: #f0f0f0; 
 }
